@@ -1,0 +1,279 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    padding-left: 250px;
+    padding-right: 250px;
+    background-color: #090C21;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+nav a{
+    color: white;
+    padding-right: 30px;
+    text-decoration: none;
+    font-size: 18px;
+}
+header img{
+    height: 75px;
+}
+.erol{
+    height: 400px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+h1{
+    font-size: 18px;
+}
+.eqol p{
+    font-size: 20px;
+    width: 300px;
+}
+.eqol{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.calculator_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1170px;
+}
+.calculator_1{
+    display: grid;
+    grid-template-columns: repeat(2, 410px);
+
+    grid-template-areas: 
+    "male female"
+    "height height"
+    "weight age";
+
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.calculator_grid{
+    background-color: #1D1F33;
+    height: 150px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px 50px 0px;
+
+    border-radius: 32px;
+}
+.male{
+    grid-area: male;
+}
+.female{
+    grid-area: female;
+}
+.height{
+    grid-area: height;
+}
+.weight{
+    grid-area: weight;
+}
+.age{
+    grid-area: age;
+}
+.calculator_grid img{
+    height: 80px;
+}
+.kruq{
+    width: 600px;
+    padding-top: 30px;
+    position: relative;
+}
+.line{
+    background-color: white;
+    height: 5px;
+    width: 600px;
+}
+h2{
+    font-size: 50px;
+}
+.spam{
+    font-size: 24px;
+}
+.circle{
+    position: absolute;
+    background-color: red;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    top: 35%;
+    left: 0px;
+}
+.circle:hover{
+    box-shadow: 0px 0px 10px red;
+}
+main{
+    margin-bottom: 200px;
+}
+.gruq{
+    font-size: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 60px;
+    width: 60px;
+    background-color: #3E4054;
+    border-radius: 50%;
+}
+.htol{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 90px;
+}
+.grug{
+    font-size: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 70px;
+    width: 70px;
+    background-color: #3E4054;
+    border-radius: 100%;
+}
+footer{
+    width: 170px;
+    padding-bottom: 70px;
+}
+.calculate_button{
+    background-color: red;
+    border: none;
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 840px;
+    margin-top: 10px;
+}
+.calculate_button a{
+    color: white;
+    text-decoration: none;
+}
+@media (min-width: 0px) and (max-width: 1280px)
+{
+    body{
+        padding-left: 19.5vw;
+        padding-right: 19.5vw;
+    }
+    nav a{
+        padding-right: 2.3vw;
+        font-size: 1.4vw;
+    }
+    header img{
+        height: 5.8vw;
+    }
+    .erol{
+        height: 31vw;
+    }
+    h1{
+        font-size: 1.4vw;
+    }
+    .eqol p{
+        font-size: 1.5vw;
+        width: 23vw;
+    }
+    .erol img{
+        height: 15vw;
+    }
+    .eqol{
+        row-gap: 1.5vw;
+    }
+    .calculator_section{
+        height: 91vw;
+    }
+    .calculator_1{
+        grid-template-columns: repeat(2, 32vw);
+    
+        grid-template-areas: 
+        "male female"
+        "height height"
+        "weight age";
+    
+        align-items: center;
+        justify-content: center;
+        column-gap: 1.5vw;
+        row-gap: 1.5vw;
+    }
+    .calculator_grid{
+        height: 11vw;
+        padding: 50px 0px 50px 0px;
+        border-radius: 32px;
+    }
+    .calculator_grid img{
+        height: 6vw;
+    }
+    .kruq{
+        width: 20vw;
+        padding-top: 2.3vw;
+    }
+    .line{
+        height: 0.3vw;
+        width: 20vw;
+    }
+    h2{
+        font-size: 3.9vw;
+    }
+    spam{
+        font-size: 1.8vw;
+    }
+    .circle{
+        height: 3.1vw;
+        width: 3.1vw;
+        border-radius: 100%;
+        top: 40%;
+        left: 70%;
+    }
+    main{
+        margin-bottom: 15vw;
+    }
+    .gruq{
+        font-size: 5.4vw;
+        height: 4.6vw;
+        width: 4.6vw;
+        border-radius: 50%;
+    }
+    .htol{
+        column-gap: 7vw;
+    }
+    .grug{
+        font-size: 5.4vw;
+        height: 5.4vw;
+        width: 5.4vw;
+        border-radius: 100%;
+    }
+    footer{
+        width: 18vw;
+        padding-bottom: 5.4vw;
+    }
+    .calculate_button{
+        border-radius: 2.5vw;
+        height: 5.4vw;
+        width: 65vw;
+        margin-top: 0.7vw;
+    }
+}
+
